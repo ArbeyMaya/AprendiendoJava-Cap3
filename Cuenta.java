@@ -22,7 +22,15 @@ public class Cuenta
 	public void depositar(double montoDeposito)
 	{
 		if(montoDeposito > 0.0) //Si el monto deposito es valido
-			saldo = saldo + montoDeposito;//lo suma al saldo
+			
+			if( montoDeposito <= saldo) {
+				saldo = saldo - montoDeposito;//lo suma al saldo
+			}
+			else {
+                System.out.println("No puedes retirar más de lo que tienes. Saldo disponible: " + saldo);
+			}
+
+			
 	}
 	
 	// método que devuelve el saldo de la cuenta
