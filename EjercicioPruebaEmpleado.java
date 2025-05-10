@@ -5,10 +5,7 @@ public class EjercicioPruebaEmpleado
 	{
 
 		EjercicioEmpleado empleado = new EjercicioEmpleado("Arbey","Maya", 1000000);
-		double salarioAnual = empleado.salarioAnual();
-		
-		
-		
+						
 		System.out.printf("Nombre: %s%n", empleado.obtenerNombre());
 		System.out.printf("Apellido: %s%n", empleado.obtenerApellido());
 		System.out.printf("Salario Mensual: $%.1f%n", empleado.obtenerSalario());
